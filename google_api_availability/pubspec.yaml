@@ -10,7 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_api_availability_android: ^1.0.0+1
+  google_api_availability_android:
+    git:
+      url: https://github.com/Mantano/flutter-google-api-availability-2.git
+      path: google_api_availability_android
+      ref: main
   google_api_availability_platform_interface: ^1.0.1
 
 dev_dependencies:
