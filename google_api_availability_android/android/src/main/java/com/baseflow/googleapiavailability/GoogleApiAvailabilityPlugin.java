@@ -55,7 +55,7 @@ public class GoogleApiAvailabilityPlugin implements FlutterPlugin, ActivityAware
     unregisterPlugin();
   }
 
-  public static void registerWith(Registrar registrar) {
+/*  public static void registerWith(Registrar registrar) {
     final GoogleApiAvailabilityPlugin plugin = new GoogleApiAvailabilityPlugin();
     plugin.registerPlugin(registrar.context(), registrar.messenger());
     plugin.methodCallHandler.setActivity(registrar.activity());
@@ -68,7 +68,7 @@ public class GoogleApiAvailabilityPlugin implements FlutterPlugin, ActivityAware
       }
     });
   }
-
+*/
   private void registerPlugin(Context context, BinaryMessenger messenger) {
     methodCallHandler = new MethodCallHandlerImpl(context, googleApiAvailabilityManager);
     channel = new MethodChannel(messenger, "flutter.baseflow.com/google_api_availability_android/methods");
